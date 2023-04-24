@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'mis-casas',
+    loadChildren: () => import('./mis-casas/mis-casas.module').then( m => m.MisCasasPageModule)
+  },
+  {
+    path: 'prediccion',
+    loadChildren: () => import('./prediccion/prediccion.module').then( m => m.PrediccionPageModule)
+  },
+  {
+    path: 'detalle',
+    loadChildren: () => import('./detalle/detalle.module').then( m => m.DetallePageModule)
+  },
 
 
 

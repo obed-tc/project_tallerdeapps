@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>prediccion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-card >
+      <img alt="Silhouette of mountains" src="https://cdn.icon-icons.com/icons2/564/PNG/512/Add_Image_icon-icons.com_54218.png" />
+    </ion-card>
+    <ion-item>
+      <ion-input type="file"></ion-input>
+    </ion-item>
+    <div class="form-group">
+      <label for="descripcion">Descripción</label>
+      <textarea class="form-control" id="descripcion" rows="3" placeholder="Ingresa una descripción"></textarea>
+    </div>
+
+    <ion-list>
+      <ion-item>
+        <ion-select placeholder="numero de habitaciones " >
+          <ion-select-option >1</ion-select-option>
+          <ion-select-option >2</ion-select-option>
+          <ion-select-option >3</ion-select-option>
+          <ion-select-option >4</ion-select-option>
+          <ion-select-option >5</ion-select-option>
+          <ion-select-option >6</ion-select-option>
+          <ion-select-option >7</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item class="sala">
+        <ion-select aria-label="Fruit" placeholder="sala y comedor  " [multiple]="true">
+          <ion-select-option >1</ion-select-option>
+          <ion-select-option >2</ion-select-option>
+          <ion-select-option >3</ion-select-option>
+          <ion-select-option >4</ion-select-option>
+          <ion-select-option >5</ion-select-option>
+          <ion-select-option >6</ion-select-option>
+          <ion-select-option >7</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-select aria-label="Fruit" placeholder="baño" [multiple]="true">
+          <ion-select-option >1</ion-select-option>
+          <ion-select-option >2</ion-select-option>
+          <ion-select-option >3</ion-select-option>
+          <ion-select-option >4</ion-select-option>
+          <
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-select aria-label="Fruit" placeholder="garaje" [multiple]="true">
+          <ion-select-option >1</ion-select-option>
+          <ion-select-option >2</ion-select-option>
+          <ion-select-option >3</ion-select-option>
+          <ion-select-option >4</ion-select-option>
+          <ion-select-option >5</ion-select-option>
+          <ion-select-option >6</ion-select-option>
+          <ion-select-option >7</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-select aria-label="Fruit" placeholder="jardin o patio" [multiple]="true">
+          <ion-select-option >si</ion-select-option>
+          <ion-select-option >no</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-select aria-label="Fruit" placeholder="sobre Avenida" [multiple]="true">
+          <ion-select-option >si</ion-select-option>
+          <ion-select-option >no</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+    </ion-list>
+
+    <ion-button type="submit"  expand="block">Agregar propiedad</ion-button>
+  </form>
+</ion-content>

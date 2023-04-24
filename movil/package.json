@@ -29,6 +29,7 @@
     "@fortawesome/fontawesome-free": "^6.2.1",
     "@ionic-native/barcode-scanner": "^5.36.0",
     "@ionic-native/core": "^5.36.0",
+    "@ionic-native/geolocation": "^5.36.0",
     "@ionic/angular": "^6.1.9",
     "@ionic/storage": "^3.0.6",
     "@ionic/storage-angular": "^3.0.6",
