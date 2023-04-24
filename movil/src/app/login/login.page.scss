@@ -5,7 +5,7 @@ form {
   min-width: 300px;
   max-width: 60%;
   margin: 0px auto;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(11, 11, 11, 0.739);
   padding: 2rem 3rem;
   border-radius: 2.5rem;
   box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
@@ -18,4 +18,7 @@ ion-content{
 img{
   border-radius: 50%;
   border: center;
+}
+ion-item{
+  background-color: #0f6ecd;
 }
