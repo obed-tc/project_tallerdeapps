@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
 
- BASE_URL: 'http://'
+ BASE_URL: 'http:/api/'
+
 
 
 };
