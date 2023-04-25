@@ -1,35 +1,31 @@
 
 <ion-content>
-  <form>
-  <ion-title>REGISTRAR USUARIO</ion-title>
-
-    <ion-item lines="full">
-      <ion-label position="floating">Nombre</ion-label>
-      <ion-input type="email" name="email" placeholder="Email" required="required"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label position="floating">Apellidos</ion-label>
-      <ion-input type="email" name="email" placeholder="Email" required="required"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label position="floating">Apellidos</ion-label>
-      <ion-input type="email" name="email" placeholder="Email" required="required"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label position="floating">correo electronico</ion-label>
-      <ion-input type="email" name="email" placeholder="Email" required="required"></ion-input>
-    </ion-item>
-
-      <ion-item lines="full">
-        <ion-label position="floating">contrasena</ion-label>
-          <ion-input type="password" name="password" placeholder="password" required="required"></ion-input>
-      </ion-item>
-      <ion-button type="submit" expand="block">REGISTRAR</ion-button>
-
-
-  </form>
+  <div class="wrapper">
+    <div class="logo">
+        <img src="./assets/img/logo.png" alt="">
+    </div>
+    <div class="text-center mt-4 name">
+       REGISTRARSE
+    </div>
+    <form class="p-3 mt-3">
+        <div class="form-field d-flex align-items-center">
+            <span class="far fa-user"></span>
+            <input type="text" name="nombre" id="userName" placeholder="nombre">
+        </div>
+        <div class="form-field d-flex align-items-center">
+            <span class="fas fa-key"></span>
+            <input type="text" name="password" id="apellido" placeholder="apellido">
+        </div>
+        <div class="form-field d-flex align-items-center">
+          <span class="fas fa-key"></span>
+          <input type="email" name="password" id="email" placeholder="email">
+      </div>
+      <div class="form-field d-flex align-items-center">
+        <span class="fas fa-key"></span>
+        <input type="password" name="password" id="pwd" placeholder="Password">
+    </div>
+        <button class="btn mt-3"  routerLink="/register">Registrar</button>
+    </form>
+  </div>
 
 </ion-content>

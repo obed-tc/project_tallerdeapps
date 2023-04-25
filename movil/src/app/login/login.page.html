@@ -1,19 +1,23 @@
-<ion-content >
-  <form >
-    <ion-item>
-      <div class="imag">
-        <img src="../assets/img/logo.png">
-        <br>
-        <ion-title>Iniciar sesión</ion-title>
+
+<ion-content>
+<div class="wrapper">
+  <div class="logo">
+      <img src="./assets/img/logo.png" alt="">
+  </div>
+  <div class="text-center mt-4 name">
+      INICIAR SESION
+  </div>
+  <form class="p-3 mt-3">
+      <div class="form-field d-flex align-items-center">
+          <span class="far fa-user"></span>
+          <input type="text" name="userName" id="userName" placeholder="Username">
       </div>
-      <ion-label position="floating">Correo electrónico</ion-label>
-      <ion-input type="email" name="email" placeholder="Email" required="required"></ion-input>
-
-      <ion-label position="floating">Contraseña</ion-label>
-      <ion-input type="password" name="password" placeholder="password" required="required"></ion-input>
-    </ion-item>
-      <ion-button type="submit" expand="block" routerLink="/tabs">Iniciar sesión</ion-button>
-      <ion-button type="submit" expand="block" routerLink="/register">Registrar</ion-button>
-
+      <div class="form-field d-flex align-items-center">
+          <span class="fas fa-key"></span>
+          <input type="password" name="password" id="pwd" placeholder="Password">
+      </div>
+      <button class="btn mt-3"  routerLink="/tabs">Inisiar sesion</button>
+      <button class="btn mt-3"  routerLink="/register">Registrarse</button>
   </form>
+</div>
 </ion-content>
