@@ -9,6 +9,7 @@ import { Storage } from '@ionic/storage';
 import { BarcodeScanner, BarcodeScannerOptions } from '@ionic-native/barcode-scanner/ngx';
 import { fromEvent } from 'rxjs';
 import { debounceTime, map } from 'rxjs/operators';
+import { NavController } from '@ionic/angular';
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -24,7 +25,8 @@ export class HomePage {
     private msjSrv: MensajesService,
     private router: Router,
     private storage: Storage,
-    private barcodeScanner: BarcodeScanner
+    private barcodeScanner: BarcodeScanner,
+    private navCtrl: NavController
   ) {
     /*this.logueo = {
       user: { valor: 'carlos', validez: this.config._VACIO },
@@ -33,11 +35,12 @@ export class HomePage {
 
     this.submitted = false;
   }
-  ionViewDidEnter(){
-
-
-
+  ionViewDidEnter() {
+    setTimeout(() => {
+      this.navCtrl.navigateRoot('/categorias');
+    }, 3000);
   }
+
   eventos(){
     this.router.navigateByUrl('/eventos');
   }

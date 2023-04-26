@@ -11,6 +11,7 @@ import { MensajesService } from './proveedores/mensajes.service';
 })
 export class AppComponent implements OnInit {
   public netStatus: string;
+  isLoading =true;
 
   constructor(
 
