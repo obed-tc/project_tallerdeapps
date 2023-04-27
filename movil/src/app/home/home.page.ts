@@ -33,11 +33,7 @@ export class HomePage {
 
     this.submitted = false;
   }
-  ionViewDidEnter(){
 
-
-
-  }
   eventos(){
     this.router.navigateByUrl('/eventos');
   }
