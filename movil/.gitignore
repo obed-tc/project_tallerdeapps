@@ -31,3 +31,6 @@ npm-debug.log*
 /plugins
 /www
 /android
+./mis-casas
+../mis-casas
+/mis-casas
