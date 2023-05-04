@@ -1,80 +1,61 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>prediccion</ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content>
-  <form>
-    <ion-card >
-      <img alt="Silhouette of mountains" src="https://cdn.icon-icons.com/icons2/564/PNG/512/Add_Image_icon-icons.com_54218.png" />
-    </ion-card>
-    <ion-item>
-      <ion-input type="file"></ion-input>
-    </ion-item>
-    <div class="form-group">
-      <label for="descripcion">Descripción</label>
-      <textarea class="form-control" id="descripcion" rows="3" placeholder="Ingresa una descripción"></textarea>
+
+  <div class="wrapper">
+    <header>
+      <div class="file-upload">
+        <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
+
+        <div class="image-upload-wrap">
+          <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+          <div class="drag-text">
+            <h3>Drag and drop a file or select add Image</h3>
+          </div>
+        </div>
+        <div class="file-upload-content">
+          <img class="file-upload-image" src="#" alt="your image" />
+          <div class="image-title-wrap">
+            <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="sections">
+
+      <section class="active">
+        <input type="text" placeholder="Title" id="title"/>
+      </section>
     </div>
 
-    <ion-list>
-      <ion-item>
-        <ion-select placeholder="numero de habitaciones " >
-          <ion-select-option >1</ion-select-option>
-          <ion-select-option >2</ion-select-option>
-          <ion-select-option >3</ion-select-option>
-          <ion-select-option >4</ion-select-option>
-          <ion-select-option >5</ion-select-option>
-          <ion-select-option >6</ion-select-option>
-          <ion-select-option >7</ion-select-option>
-        </ion-select>
-      </ion-item>
-      <ion-item class="sala">
-        <ion-select aria-label="Fruit" placeholder="sala y comedor  " [multiple]="true">
-          <ion-select-option >1</ion-select-option>
-          <ion-select-option >2</ion-select-option>
-          <ion-select-option >3</ion-select-option>
-          <ion-select-option >4</ion-select-option>
-          <ion-select-option >5</ion-select-option>
-          <ion-select-option >6</ion-select-option>
-          <ion-select-option >7</ion-select-option>
-        </ion-select>
-      </ion-item>
-      <ion-item>
-        <ion-select aria-label="Fruit" placeholder="baño" [multiple]="true">
-          <ion-select-option >1</ion-select-option>
-          <ion-select-option >2</ion-select-option>
-          <ion-select-option >3</ion-select-option>
-          <ion-select-option >4</ion-select-option>
-          <
-        </ion-select>
-      </ion-item>
-      <ion-item>
-        <ion-select aria-label="Fruit" placeholder="garaje" [multiple]="true">
-          <ion-select-option >1</ion-select-option>
-          <ion-select-option >2</ion-select-option>
-          <ion-select-option >3</ion-select-option>
-          <ion-select-option >4</ion-select-option>
-          <ion-select-option >5</ion-select-option>
-          <ion-select-option >6</ion-select-option>
-          <ion-select-option >7</ion-select-option>
-        </ion-select>
-      </ion-item>
-      <ion-item>
-        <ion-select aria-label="Fruit" placeholder="jardin o patio" [multiple]="true">
-          <ion-select-option >si</ion-select-option>
-          <ion-select-option >no</ion-select-option>
-        </ion-select>
-      </ion-item>
-      <ion-item>
-        <ion-select aria-label="Fruit" placeholder="sobre Avenida" [multiple]="true">
-          <ion-select-option >si</ion-select-option>
-          <ion-select-option >no</ion-select-option>
-        </ion-select>
-      </ion-item>
+    <div class="ways">
+      <div class="box">
+        <select>
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+          <option>Option 4</option>
+          <option>Option 5</option>
+        </select>
 
-    </ion-list>
+        <select>
+        <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+          <option>Option 4</option>
+          <option>Option 5</option>
+        </select>
 
-    <ion-button type="submit"  expand="block">Agregar propiedad</ion-button>
-  </form>
+        <select>
+          <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 4</option>
+            <option>Option 5</option>
+          </select>
+      </div>
+      <button class="btn mt-3"  routerLink="/tabs">Inisiar sesion</button>
+      <button class="btn mt-3"  routerLink="/register">Registrarse</button>
+
+    </div>
+  </div>
 </ion-content>

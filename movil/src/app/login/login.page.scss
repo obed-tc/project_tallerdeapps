@@ -64,7 +64,7 @@
     height: 40px;
     background-color: #7175b5;
     color: #fff;
-    border-radius: 25px;
+    border-radius: 10px;
     box-shadow: 3px 3px 3px #b1b1b1,
         -3px -3px 3px #fff;
     letter-spacing: 1.3px;
@@ -72,22 +72,5 @@
 
 .wrapper .btn:hover {
     background-color: #7175b5;
-}
-
-.wrapper a {
-    text-decoration: none;
-    font-size: 0.8rem;
-    color: #7175b5;
-}
-
-.wrapper a:hover {
-    color: #7175b5;
-}
-
-@media(max-width: 380px) {
-    .wrapper {
-        margin: 30px 20px;
-        padding: 40px 15px 15px 15px;
-    }
 }
 
