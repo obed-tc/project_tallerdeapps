@@ -47,16 +47,16 @@ section select {
 
 
 .box select {
-  background-color: #0563af;
-  color: white;
-  padding: 12px;
-  width: 250px;
-  border: none;
-  font-size: 20px;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
-  -webkit-appearance: button;
-  appearance: button;
-  outline: none;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  outline: 0;
+  background-color: #F5F7FA;
+  padding: 10px;
+  margin-bottom: 10px;
+  letter-spacing: 1.4px;
+  color: rgb(65, 64, 64);
 }
 
 
