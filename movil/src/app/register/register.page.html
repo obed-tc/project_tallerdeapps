@@ -7,25 +7,21 @@
     <div class="text-center mt-4 name">
        REGISTRARSE
     </div>
-    <form class="p-3 mt-3">
+    <form class="p-3 mt-3" [formGroup]= "formularioregistro" (submit)="register(formularioregistro)">
         <div class="form-field d-flex align-items-center">
             <span class="far fa-user"></span>
-            <input type="text" name="nombre" id="userName" placeholder="nombre">
-        </div>
-        <div class="form-field d-flex align-items-center">
-            <span class="fas fa-key"></span>
-            <input type="text" name="password" id="apellido" placeholder="apellido">
+            <input formControlName="username" id="username" placeholder="Nombre">
         </div>
         <div class="form-field d-flex align-items-center">
           <span class="fas fa-key"></span>
-          <input type="email" name="password" id="email" placeholder="email">
+          <input formControlName="email" id="email" placeholder="Email">
       </div>
       <div class="form-field d-flex align-items-center">
         <span class="fas fa-key"></span>
-        <input type="password" name="password" id="pwd" placeholder="Password">
+        <input formControlName="password" type="password" id="password" placeholder="Password">
     </div>
-        <button class="btn mt-3"  routerLink="/register">Registrar</button>
-    </form>
+        <button class="btn mt-3">Registrar</button>
+  </form>
   </div>
 
 </ion-content>

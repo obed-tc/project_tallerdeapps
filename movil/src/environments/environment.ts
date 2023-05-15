@@ -2,9 +2,7 @@
 export const environment = {
   production: false,
 
- BASE_URL: 'http:/api/'
-
-
+// url: "https://django-pwvr.onrender.com/api"
 
 };
 
