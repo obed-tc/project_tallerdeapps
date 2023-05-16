@@ -45,7 +45,7 @@ export class LoginPage implements OnInit {
           console.log(data);
           if (data) {
             this.storage.set('username', data);
-            this.route.navigate(['/perfil']);
+            this.route.navigate(['/tabs']);
           }
         },
         (error: any) => {

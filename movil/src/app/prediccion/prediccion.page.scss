@@ -1,166 +1,48 @@
-
-
-.wrapper  {
-  background-color: #4f75c11f;
-  padding: 25px;
-  border-radius: 5px;
-  width: 360px;
-  max-width: 100%;
-  margin: 50px auto;
-  align-self: center;
-  box-sizing: border-box;
+.form-group{
+  background-color: rgba(13, 12, 12, 0.558);
+  color: blanchedalmond;
 }
-
-header {
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  display: flex;
+.sala{
+  background-position:top;
 }
-
-header span {
-  flex: 1;
-  text-align: right;
-  font-size: 12px;
-  color: #999;
-}
-
-section input,
-section textarea {
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-  border: 1px solid #ddd;
-  outline: 0;
-  background-color: #F5F7FA;
-  padding: 10px;
-  margin-bottom: 10px;
-  letter-spacing: 1.4px;
-}
-section textarea {
-  min-height: 200px;
-}
-section select {
-  display: none;
+img{
+  border-radius: 8%;
 }
 
 
-
-.box select {
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-  border: 1px solid #ddd;
-  outline: 0;
-  background-color: #F5F7FA;
-  padding: 10px;
-  margin-bottom: 10px;
-  letter-spacing: 1.4px;
-  color: rgb(65, 64, 64);
+.enfermedad-card {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 16px;
 }
 
-
-
-
-.file-upload {
-  background-color: #ffffff;
-  width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+.realizar-prediccion-button {
+  margin-top: 10px;
+  --background: #7175b5;
 }
 
-.file-upload-btn {
-  width: 100%;
-  margin: 0;
-  color: #fff;
-  background: #1FB264;
-  border: none;
-  padding: 10px;
-  border-radius: 4px;
-  border-bottom: 4px solid #15824B;
-  transition: all .2s ease;
-  outline: none;
-  text-transform: uppercase;
-  font-weight: 700;
+.resultado-card {
+  background-color: #eaf1ff;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 16px;
 }
 
-.file-upload-btn:hover {
-  background: #1AA059;
-  color: #ffffff;
-  transition: all .2s ease;
-  cursor: pointer;
-}
+// .background-image {
+//   position: relative;
+//   background-image: url("assets/img/fondoO.png");
+//   background-size: cover;
+//   background-position: center;
+// }
 
-.file-upload-btn:active {
-  border: 0;
-  transition: all .2s ease;
-}
-
-.file-upload-content {
-  display: none;
-  text-align: center;
-}
-
-.file-upload-input {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  outline: none;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.image-upload-wrap {
-  margin-top: 20px;
-  border: 4px dashed #1FB264;
-  position: relative;
-}
-
-.image-dropping,
-.image-upload-wrap:hover {
-  background-color: #1FB264;
-  border: 4px dashed #ffffff;
-}
-
-.image-title-wrap {
-  padding: 0 15px 15px 15px;
-  color: #222;
-}
-
-.drag-text {
-  text-align: center;
-}
-
-.drag-text h3 {
-  font-weight: 100;
-  text-transform: uppercase;
-  color: #15824B;
-  padding: 60px 0;
-}
-
-
-
-
-
-
-
-
-
-.wrapper .btn:hover {
-  background-color: #7175b5;
-}
-
-.wrapper .btn {
-  box-shadow: none;
-  margin-left: 30px;
-  height: 40px;
-  background-color: #7175b5;
-  color: #fff;
-  border-radius: 10px;
-  box-shadow: 3px 3px 3px #b1b1b1,
-      -3px -3px 3px #fff;
-  letter-spacing: 1.3px;
-}
+// .background-image::before {
+//   content: "";
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 50px; /* Ajusta la altura del degradado según tus necesidades */
+//   background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+// }
 

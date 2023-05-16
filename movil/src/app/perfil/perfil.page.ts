@@ -13,13 +13,14 @@ export class PerfilPage implements OnInit {
 
 
   constructor(private storage: Storage, private router: Router) { }
-
   ngOnInit() {
-    this.storage.get('username').then((data) => {
-      if (data) {
-        this.username = data.usser_info.username;
-        this.email = data.usser_info.email;
-      }
+    this.storage.create().then(() => {
+      this.storage.get('username').then((data) => {
+        if (data) {
+          this.username = data.usser_info.username;
+          this.email = data.usser_info.email;
+        }
+      });
     });
   }
 
