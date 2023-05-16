@@ -1,4 +1,3 @@
-
 <ion-content>
   <div class="wrapper">
     <div class="logo">
@@ -7,21 +6,34 @@
     <div class="text-center mt-4 name">
        REGISTRARSE
     </div>
-    <form class="p-3 mt-3" [formGroup]= "formularioregistro" (submit)="register(formularioregistro)">
+    <form class="p-3 mt-3" [formGroup]="formularioregistro" (submit)="register(formularioregistro)">
         <div class="form-field d-flex align-items-center">
             <span class="far fa-user"></span>
             <input formControlName="username" id="username" placeholder="Nombre">
+        </div>
+        <div *ngIf="submitted && formularioregistro.controls['username'].errors?.required" class="error-message">
+           <p>El nombre es obligatorio   </p>
         </div>
         <div class="form-field d-flex align-items-center">
           <span class="fas fa-key"></span>
           <input formControlName="email" id="email" placeholder="Email">
       </div>
+      <div *ngIf="submitted && formularioregistro.controls['email'].errors?.required" class="error-message">
+       <p>El email es obligatorio</p>
+      </div>
+      <div *ngIf="submitted && formularioregistro.controls['email'].errors?.email" class="error-message">
+        <p>Por favor, introduce un email válido </p>
+      </div>
       <div class="form-field d-flex align-items-center">
         <span class="fas fa-key"></span>
         <input formControlName="password" type="password" id="password" placeholder="Password">
-    </div>
-        <button class="btn mt-3">Registrar</button>
-  </form>
-  </div>
+      </div>
+      <div *ngIf="submitted && formularioregistro.controls['password'].errors?.required" class="error-message">
+       <p>La contraseña es obligatoria</p>
+      </div>
+      <button class="btn mt-3"  (click)="presentToast('Usuario registrado exitosamente')" expand="block">Registrar</button>
 
+    </form>
+
+  </div>
 </ion-content>

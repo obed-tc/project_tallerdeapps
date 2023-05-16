@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Storage } from '@ionic/storage';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-perfil',
@@ -6,10 +8,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./perfil.page.scss'],
 })
 export class PerfilPage implements OnInit {
+  username: any;
+  email: any;
 
-  constructor() { }
+
+  constructor(private storage: Storage, private router: Router) { }
 
   ngOnInit() {
+    this.storage.get('username').then((data) => {
+      if (data) {
+        this.username = data.usser_info.username;
+        this.email = data.usser_info.email;
+      }
+    });
   }
 
+  logout() {
+    this.storage.remove('username');
+    this.router.navigate(['/login']);
+  }
 }
